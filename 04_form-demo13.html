@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>はじめてのBootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        
+        <style>
+            body {
+                padding-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-6">
+                    <span class="visible-xs">スマートフォン(768px 未満)で表示</span>
+                </div>
+                <div class="col col-xs-6">
+                    <span class="hidden-xs">スマートフォン(768px 未満)で非表示</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-6">
+                    <span class="visible-sm">タブレット(768px 以上, 992px未満)で表示</span>
+                </div>
+                <div class="col col-xs-6">
+                    <span class="hidden-sm">タブレット(768px 以上, 992px未満)で非表示</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-6">
+                    <span class="visible-md">デスクトップ(992px 以上, 1200px未満)で表示</span>
+                </div>
+                <div class="col col-xs-6">
+                    <span class="hidden-md">デスクトップ(992px 以上, 1200px未満)で非表示</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-6">
+                    <span class="visible-lg">大きなデスクトップ( 1200px以上)で表示</span>
+                </div>
+                <div class="col col-xs-6">
+                    <span class="hidden-lg">大きなデスクトップ(1200px以上)で非表示</span>
+                </div>
+            </div>
+        </div><!-- /container -->
+        
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

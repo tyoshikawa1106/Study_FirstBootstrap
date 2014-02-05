@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>はじめてのBootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        
+        <style>
+            body {
+                padding-top: 100px;
+            }
+        </style>
+    </head>
+    <body>        
+        <div class="container">
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">ヘッダー</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <p>コンテンツ</p>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                </div>
+                        </div><!-- /.modal-content -->
+                </div><!-- /.modal-dailog -->
+            </div><!-- /.modal -->
+                
+            <button id="click" class="btn btn-primary">モーダル起動</button>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+                $(function() {
+                        $('#click').on('click', function() {
+                                $('#myModal').modal({backdrop: false});
+                        });
+                });
+        </script>
+    </body>
+</html>

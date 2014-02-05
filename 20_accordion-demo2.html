@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>はじめてのBootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        
+        <style>
+            body {
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel-group" id="my-accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#collapse1">
+                            ヘッダー1
+                        </a>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            コンテンツ1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#collapse2">
+                        ヘッダー2
+                    </a>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            コンテンツ2
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#collapse3">
+                        ヘッダー3
+                    </a>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            コンテンツ3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
